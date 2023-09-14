@@ -1,4 +1,4 @@
-import { Nav } from "./wrappers";
+import { Nav, Logotype } from "./wrappers";
 import { LogoRouter, StyledA } from "./buttons";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,12 +8,15 @@ export default function Navbar() {
 		<Nav>
 			<LogoRouter>
 				<Link href="/">
-					<Image src="/tap-glyph.svg" alt="Transfer Agent Protocol" width={32} height={32} />
+					<Image src="/tap-glyph.svg" alt="Transfer Agent Protocol" width={48} height={48} />
 				</Link>
+				<Logotype>Transfer Agent Protocol</Logotype>
 			</LogoRouter>
 			<span>
 				<StyledA>
-					<Link href="/join">Join</Link>
+					<Link href="https://github.com/poet-network/tap-cap-table">
+						<Image src="/icons/github.svg" alt="TAP Cap Table Github" width={32} height={32} />
+					</Link>
 				</StyledA>
 			</span>
 		</Nav>

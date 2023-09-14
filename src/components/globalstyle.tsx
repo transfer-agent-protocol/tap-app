@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 	font-family: "IBM Plex Mono", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
 	background: ${({ theme }) => theme.colors.background};
 	font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: normal;
     color: ${({ theme }) => theme.colors.text};
     overflow-y: scroll;
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
 a {
 	color: ${({ theme }) => theme.colors.text};
-	font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: "IBM Plex Mono", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
 	font-weight: 600;
     text-decoration: none;
     margin: 0;
@@ -53,7 +53,7 @@ a {
 
   ::selection {
 	background: ${({ theme }) => theme.colors.main};
-	color: ${({ theme }) => theme.colors.accent};
+	color: ${({ theme }) => theme.colors.background};
   }
 `;
 

@@ -4,15 +4,16 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import theme from "../components/theme";
 import GlobalStyle from "../components/globalstyle";
-import { IBM_Plex_Mono } from 'next/font/google'
+import { IBM_Plex_Mono } from 'next/font/google';
+
 import Layout from "../components/layout";
 
-//👇 Configure our font object
-const ibmPlex = IBM_Plex_Mono({
-	//👇 Pass the font weights you want to use
-	weight: ['300', '400', '500'],
+// Configure our font object
+const plex = IBM_Plex_Mono({
+	// Pass the font weights you want to use
+	weight: ['300', '400', '500', '600', '700',],
 	style: ['normal', 'italic'],
-//👇 Pass the font display strategy you want to use
+	// Pass the font display strategy you want to use
 	subsets: ['latin'],
 })
 
@@ -20,28 +21,28 @@ export default function App({ Component, pageProps }: AppProps & { Component: Ne
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-			<Layout className={ibmPlex.className}>
+			<Layout className={plex.className}>
 				<Head>
 					<meta charSet="utf-8" />
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 					<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=yes" />
-					<meta name="author" content="Poet's App Scaffold" />
+					<meta name="author" content="Transfer Agent Protocol" />
 					<meta
 						name="description"
-						content="Tokenized capital markets infrastructure company."
+						content="Mint equity cap tables onchain. MIT-licensed, open-source protocol stack to build web3 equivalents of traditional transfer agents. Regulatory compliant tokenized capital markets infrastructure."
 					/>
 
-					<title>App Scaffold</title>
+					<title>Transfer Agent Protocol</title>
 
 					<meta property="og:type" content="website" />
-					<meta property="og:site_name" content="Poet's App Scaffold" />
-					<meta property="og:url" content="https://poet.network" />
-					<meta property="og:title" content="EhList" />
+					<meta property="og:site_name" content="Transfer Agent Protocol" />
+					<meta property="og:url" content="https://transferagentprotocol.xyz" />
+					<meta property="og:title" content="Transfer Agent Protocol" />
 					<meta
 						property="og:description"
-						content="Tokenized capital markets infrastructure company."
+						content="Mint equity cap tables onchain. MIT-licensed, open-source protocol stack to build web3 equivalents of traditional transfer agents. Regulatory compliant tokenized capital markets infrastructure."
 					/>
-					<link rel="canonical" href="https://poet.network" />
+					<link rel="canonical" href="https://transferagentprotocol.xyz" />
 
 					<link rel="manifest" href="/manifest.json" />
 
