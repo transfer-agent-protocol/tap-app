@@ -4,7 +4,7 @@ import { H1, H2, Blockquote, P } from "../components/typography";
 
 const TallyStyles = {
 	width: "100%",
-	height: "90vh",
+	height: "61.8vh",
 	margin: "0 auto",
 	border: "none",
 };
@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<Content>
 			<Heading>
-				<H1># Open source onramp for in demand RWAs</H1>
+				<H1>&#35; Open source onramp for in demand RWAs</H1>
 			</Heading>
 			<Blockquote>
 				<H2>Crypto deserves compliant infrastructure for tokenized capital markets. We believe it must be truly open, free, and user-centric.</H2>
