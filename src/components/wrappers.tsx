@@ -18,11 +18,21 @@ const Nav = styled.nav`
     align-items: center;
     align-self: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 750px;
     height: 4rem;
     padding: 0.5rem;
 `;
 
+const Logotype = styled.span`
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 7.75rem;
+	text-align: left;
+	padding-left: 0.3rem;
+	font-weight: 600;
+`
 const Main = styled.main`
     display: flex;
     flex-flow: column nowrap;
@@ -59,7 +69,7 @@ const Heading = styled.div`
     align-items: center;
     align-self: center;
     text-align: center;
-    margin: 9rem 0;
+    margin: 9rem 0 2.75rem 0;
 
     /** iPhone portrait mode and equivalent devices */
     @media only screen and (max-width: 768px) {
@@ -183,4 +193,4 @@ const FooterAside = styled.aside`
     }
 `;
 
-export { FullWidth, Nav, Main, Heading, Content, Article, FooterWrapper, FooterContent, FooterAside };
+export { FullWidth, Nav, Logotype, Main, Heading, Content, Article, FooterWrapper, FooterContent, FooterAside };

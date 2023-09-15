@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const H1 = styled.h1`
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "Spectral", "IBM Plex Mono", sans-serif;
     max-width: 52rem;
     font-size: ${({ theme }) => theme.fontSizes.H1};
     line-height: ${({ theme }) => theme.lineHeights.H1};
     font-weight: 600;
-	text-align: center;
+	text-align: left;
     margin-bottom: 4rem;
     padding: 0;
 
@@ -28,7 +28,7 @@ const H2 = styled.h2`
     font-size: ${({ theme }) => theme.fontSizes.H2};
     line-height: ${({ theme }) => theme.lineHeights.H2};
     font-weight: 600;
-	text-align: center;
+	text-align: left;
     margin-bottom: 4rem;
     padding: 0;
 
@@ -63,11 +63,11 @@ const H3 = styled.h3`
 // blockquote element with a border-left
 const Blockquote = styled.blockquote`
     position: relative;
-    max-width: 40rem;
+    max-width: 38.5rem;
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-weight: 400;
+	text-align: left;
     line-height: 1.58rem;
-	font-style: italic;
     word-wrap: break-word;
     padding: 0;
     margin: 0 0 4rem 0;
@@ -77,11 +77,11 @@ const Blockquote = styled.blockquote`
         position: absolute;
         font-size: 4rem;
         width: 0.2rem;
-        height: 180%;
+        height: 80%;
         background-color: ${({ theme }) => theme.colors.main};
-        border-radius: ${({ theme }) => theme.borderRadius.main};
-        top: -0.618rem;
-        left: -2.618rem;
+        border-radius: none;
+        top: 0.618rem;
+        left: -1.618rem;
 
         /** iPhone portrait mode and equivalent devices */
         @media only screen and (max-width: 475px) {
