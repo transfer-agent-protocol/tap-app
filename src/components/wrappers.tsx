@@ -132,6 +132,16 @@ const Article = styled.article`
     }
 `;
 
+const TallyWrapper = styled.div`
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+`;
+
 const FooterWrapper = styled.footer`
     display: flex;
     flex-flow: row nowrap;
@@ -193,4 +203,4 @@ const FooterAside = styled.aside`
     }
 `;
 
-export { FullWidth, Nav, Logotype, Main, Heading, Content, Article, FooterWrapper, FooterContent, FooterAside };
+export { FullWidth, Nav, Logotype, Main, Heading, Content, Article, TallyWrapper, FooterWrapper, FooterContent, FooterAside };
