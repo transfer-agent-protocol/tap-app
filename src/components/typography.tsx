@@ -41,8 +41,8 @@ const H3 = styled.h3`
     font-size: ${({ theme }) => theme.fontSizes.H3};
     line-height: ${({ theme }) => theme.lineHeights.H3};
     font-weight: 600;
-	text-align: center;
-    margin-bottom: 4rem;
+	text-align: left;
+    margin-bottom: 1rem;
     padding: 0;
 
     /** iPad portrait mode and equivalent devices */
@@ -60,14 +60,17 @@ const H3 = styled.h3`
 // blockquote element with a border-left
 const Blockquote = styled.blockquote`
     position: relative;
-    max-width: 38.5rem;
+    max-width: 42.5rem;
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-weight: 400;
 	text-align: left;
     line-height: 1.58rem;
     word-wrap: break-word;
     padding: 0;
-    margin: 0 0 4rem 0;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 
     &::before {
         content: "";
