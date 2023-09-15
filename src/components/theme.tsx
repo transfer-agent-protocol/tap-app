@@ -11,8 +11,8 @@ const theme: DefaultTheme = {
 	},
 	fontSizes: {
 		H1: "2rem",
-		H2: "1.5rem",
-		H3: "1.313rem",
+		H2: "1.75rem",
+		H3: "1.5rem",
 		large: "1.4rem",
 		medium: "1.2rem",
 		baseline: "1rem",
