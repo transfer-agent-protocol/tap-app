@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     padding: 0;
     margin: 0;
-	font-family: "IBM Plex Mono", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: "IBM Plex Mono", monospace;
 	background: ${({ theme }) => theme.colors.background};
 	font-weight: 400;
     font-size: 16px;
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
 a {
 	color: ${({ theme }) => theme.colors.text};
-	font-family: "IBM Plex Mono", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: "IBM Plex Mono", monospace;
 	font-weight: 600;
     text-decoration: none;
     margin: 0;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const H1 = styled.h1`
-    font-family: "Spectral", "IBM Plex Mono", sans-serif;
     max-width: 52rem;
     font-size: ${({ theme }) => theme.fontSizes.H1};
     line-height: ${({ theme }) => theme.lineHeights.H1};
@@ -23,7 +22,6 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
     position: relative;
-    font-family: "IBM Plex Mono", sans-serif;
     max-width: 52rem;
     font-size: ${({ theme }) => theme.fontSizes.H2};
     line-height: ${({ theme }) => theme.lineHeights.H2};
@@ -39,7 +37,6 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h3`
-    font-family: "IBM Plex Mono", sans-serif;
     max-width: 40rem;
     font-size: ${({ theme }) => theme.fontSizes.H3};
     line-height: ${({ theme }) => theme.lineHeights.H3};
@@ -99,7 +96,6 @@ const Blockquote = styled.blockquote`
 `;
 
 const P = styled.p`
-	font-family: "IBM Plex Mono", sans-serif;
     max-width: 40rem;
     font-size: ${({ theme }) => theme.fontSizes.medium};
     letter-spacing: 0.02rem;
