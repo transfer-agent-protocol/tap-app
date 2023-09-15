@@ -18,9 +18,9 @@ const Nav = styled.nav`
     align-items: center;
     align-self: center;
     width: 100%;
-    max-width: 750px;
+    max-width: 768px;
     height: 4rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 `;
 
 const Logotype = styled.span`
@@ -144,38 +144,37 @@ const TallyWrapper = styled.div`
 
 const FooterWrapper = styled.footer`
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     flex-shrink: 0;
-    align-items: flex-start;
+   	align-items: flext-start;
+    align-self: center;
     justify-content: flex-start;
-    align-self: flex-start;
-    width: 100%;
+    width: 46.80rem;
+	max-width: 1280px;
     margin: 8rem 0 4rem 0;
-    padding: 4rem 0 4rem 0;
-    border-top: 0.5px dashed ${({ theme }) => theme.colors.outline};
 `;
 
 const FooterContent = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.618rem;
-    width: 60%;
-    align-items: start;
-    justify-items: start;
-    justify-content: start;
+    display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	margin: 0 0 0 2.7rem;
+	
 
     /** iPhone portrait mode and equivalent devices */
     @media only screen and (max-width: 475px) {
-        grid-template-columns: repeat(1, 1fr);
+        font-size: ${({ theme }) => theme.fontSizes.medium};
     }
 
-    p {
-        font-size: ${({ theme }) => theme.fontSizes.baseline};
-        margin: 0;
+    a, span {
+        font-size: ${({ theme }) => theme.fontSizes.large};
+        padding: 0 1rem 0 0;;
 
         /** iPad portrait mode and equivalent devices */
         @media only screen and (max-width: 768px) {
-            font-size: ${({ theme }) => theme.fontSizes.baseline};
+            font-size: ${({ theme }) => theme.fontSizes.large};
         }
     }
 `;
