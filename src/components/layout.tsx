@@ -12,7 +12,7 @@ export default function Layout({ children }: Props) {
 			<Main>{children}</Main>
 			<FooterWrapper>
 				<FooterContent>
-					© {new Date().getFullYear()} Poet Network Inc.
+					© {new Date().getFullYear()} builders
 				</FooterContent>
 			</FooterWrapper>
 		</FullWidth>
