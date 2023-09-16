@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const H1 = styled.h1`
+	position: relative;
     max-width: 52rem;
     font-size: ${({ theme }) => theme.fontSizes.H1};
     line-height: ${({ theme }) => theme.lineHeights.H1};
@@ -9,15 +10,18 @@ const H1 = styled.h1`
     margin-bottom: 4rem;
     padding: 0;
 
-    /** iPad portrait mode and equivalent devices */
-    @media only screen and (max-width: 768px) {
-        font-size: 3.5rem;
-    }
+	&::before {
+		content: '#';
+		position: absolute;
+		font-size: inherit;
+		font-weight: inherit;
+		left: -1.618rem;
 
-    /** iPhone portrait mode and equivalent devices */
-    @media only screen and (max-width: 512px) {
-        font-size: 2.5rem;
-    }
+		/** iPhone portrait mode and equivalent devices */
+		@media only screen and (max-width: 512px) {
+			content: none;
+		}
+	}
 `;
 
 const H2 = styled.h2`
@@ -27,16 +31,25 @@ const H2 = styled.h2`
     line-height: ${({ theme }) => theme.lineHeights.H2};
     font-weight: 600;
 	text-align: left;
-    margin-bottom: 4rem;
+    margin: 4rem 0 2.75rem 0;
     padding: 0;
 
-    /** iPad portrait mode and equivalent devices */
-    @media only screen and (max-width: 768px) {
-        font-size: 2rem;
-    }
+	&::before {
+		content: '##';
+		position: absolute;
+		font-size: inherit;
+		font-weight: inherit;
+		left: -2.618rem;
+
+		/** iPhone portrait mode and equivalent devices */
+		@media only screen and (max-width: 512px) {
+			content: none;
+		}
+	}
 `;
 
 const H3 = styled.h3`
+	position: relative;
     max-width: 40rem;
     font-size: ${({ theme }) => theme.fontSizes.H3};
     line-height: ${({ theme }) => theme.lineHeights.H3};
@@ -45,22 +58,23 @@ const H3 = styled.h3`
     margin-bottom: 1rem;
     padding: 0;
 
-    /** iPad portrait mode and equivalent devices */
-    @media only screen and (max-width: 768px) {
-        font-size: 2rem;
-    }
-
-    /** iPhone portrait mode and equivalent devices */
-    @media only screen and (max-width: 512px) {
-        font-size: 1.618rem;
-        line-height: 1.4rem;
-    }
+	&::before {
+		content: '###';
+		position: absolute;
+		font-size: inherit;
+		font-weight: inherit;
+		left: -3.618rem;
+		/** iPhone portrait mode and equivalent devices */
+		@media only screen and (max-width: 512px) {
+			content: none;
+		}
+	}
 `;
 
 // blockquote element with a border-left
 const Blockquote = styled.blockquote`
     position: relative;
-    max-width: 42.5rem;
+    max-width: 748px;
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-weight: 400;
 	text-align: left;
@@ -71,31 +85,9 @@ const Blockquote = styled.blockquote`
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-
-    &::before {
-        content: "";
-        position: absolute;
-        font-size: 4rem;
-        width: 0.2rem;
-        height: 80%;
-        background-color: ${({ theme }) => theme.colors.main};
-        border-radius: none;
-        top: 0.618rem;
-        left: -1.618rem;
-
-        /** iPhone portrait mode and equivalent devices */
-        @media only screen and (max-width: 475px) {
-            content: no-close-quote;
-        }
-    }
-
-    &::after {
-        content: no-close-quote;
-        position: absolute;
-        font-size: 4rem;
-        top: -1.618rem;
-        left: -2.618rem;
-    }
+	border-left: 2px solid ${({ theme }) => theme.colors.main};
+	padding-left: 1.618rem;
+	left: -1.618rem;
 `;
 
 const P = styled.p`
@@ -108,15 +100,10 @@ const P = styled.p`
     padding: 0;
     margin: 0 0 1.58rem 0;
 
-    /** iPad portrait mode and equivalent devices */
-    @media only screen and (max-width: 768px) {
-        max-width: 30rem;
-    }
-
-    /** iPhone portrait mode and equivalent devices */
-    @media only screen and (max-width: 512px) {
-        max-width: 100%;
-    }
+	/** iPhone portrait mode and equivalent devices */
+	@media only screen and (max-width: 512px) {
+		font-size: ${({ theme }) => theme.fontSizes.baseline};
+	}
 `;
 
 const Label = styled.label`
