@@ -41,6 +41,11 @@ a {
 		text-decoration: none;
 		outline: 0;
 	}
+
+	/** iPhone portrait mode and equivalent devices */
+	@media only screen and (max-width: 512px) {
+		font-size: ${({ theme }) => theme.fontSizes.baseline};
+	}
   }
 
   button:focus {

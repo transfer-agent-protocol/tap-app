@@ -11,11 +11,13 @@ import Layout from "../components/layout";
 // Configure our font object
 const plex = IBM_Plex_Mono({
 	// Pass the font weights you want to use
-	weight: ['300', '400', '500', '600', '700',],
+	weight: ['400', '500', '600', '700',],
 	style: ['normal', 'italic'],
 	// Pass the font display strategy you want to use
-	subsets: ['latin'],
-})
+	subsets: ['latin-ext'],
+	display: 'swap',
+	preload: true,
+});
 
 export default function App({ Component, pageProps }: AppProps & { Component: NextPage<any> }) {
 	return (
