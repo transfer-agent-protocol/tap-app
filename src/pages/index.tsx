@@ -15,11 +15,11 @@ export default function Home() {
 	return (
 		<Content>
 			<Heading>
-				<H1>Open source onramp for in demand RWAs</H1>
+				<H1>Open source onramp for in-demand RWAs</H1>
 			</Heading>
 			<Blockquote>
-				<P>Crypto deserves compliant infrastructure for tokenized capital markets. We believe it must be truly open, free, and user-centric.</P>
-				<P>Introducing an open source protocol stack to build web3 equivalents of traditional transfer agents.</P>
+				<P>Crypto deserves <mark>compliant infrastructure</mark> for <mark>tokenized capital markets</mark>. We believe it must be truly open, free, and user-centric.</P>
+				<P>Introducing an <mark>open source protocol stack</mark> to build web3 equivalents of transfer agents. This infra lets you <mark>mint performant equity cap tables onchain</mark>.</P>
 				<a href="https://paragraph.xyz/@poetnetworkhq/rwa-tokenization-protocol-stack" target="_blank" rel="noopener noreferrer">Read the full announcement</a>
 			</Blockquote>
 			<H2>
