@@ -48,7 +48,7 @@ a {
 	}
   }
 
-  button:focus {
+button:focus {
     outline: 0;
 }
 

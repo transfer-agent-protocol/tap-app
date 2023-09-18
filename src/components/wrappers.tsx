@@ -25,8 +25,9 @@ const Logotype = styled.span`
 	text-align: left;
 	font-size: ${({ theme }) => theme.fontSizes.baseline};
 	font-weight: 600;
-	width: 8rem
-`
+	width: 8rem;
+`;
+
 const Main = styled.main`
     display: flex;
     flex-flow: column nowrap;
@@ -45,9 +46,10 @@ const Main = styled.main`
 		padding: 0 0 0 0.618rem;
     }
 
-    & mark {
-        color: ${({ theme }) => theme.colors.accent};
-        background-color: transparent;
+    mark {
+        color: ${({ theme }) => theme.colors.background};
+        background-color: ${({ theme }) => theme.colors.main};;
+		font-weight: 500;
     }
 `;
 
@@ -120,6 +122,11 @@ const Credits = styled.div`
 			padding: 0 0.3rem 0 0;
 		}
     }
+
+	a:hover {
+		color: ${({ theme }) => theme.colors.background} !important;
+		background: ${({ theme }) => theme.colors.main} !important;
+	}
 `; 
 
 const TallyWrapper = styled.div`

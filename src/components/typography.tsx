@@ -88,6 +88,11 @@ const Blockquote = styled.blockquote`
 	border-left: 2px solid ${({ theme }) => theme.colors.main};
 	padding-left: 1.618rem;
 	left: -1.618rem;
+
+	a:hover {
+		color: ${({ theme }) => theme.colors.background};
+		background: ${({ theme }) => theme.colors.main};
+	}
 `;
 
 const P = styled.p`
