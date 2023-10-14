@@ -15,6 +15,7 @@ const Nav = styled.nav`
 	align-items: center;
 	width: 100%;
 	max-width: 768px;
+	padding: 1rem 0;
 `;
 
 const Logotype = styled.span`
@@ -113,6 +114,7 @@ const Credits = styled.div`
 	justify-content: flex-start;
 	align-items: flex-start;
 	font-size: ${({ theme }) => theme.fontSizes.large};
+	margin-bottom: 4rem;
 
 	a, span {
         padding: 0 1rem 0 0;
@@ -135,6 +137,7 @@ const TallyWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+	padding: 2px;
     width: 100%;
     height: 100%;
 `;
@@ -146,7 +149,7 @@ const FooterWrapper = styled.footer`
    	align-items: flext-start;
     align-self: center;
     justify-content: flex-start;
-    margin: 8rem 0 4rem 0;
+    margin: 4rem auto;
 `;
 
 const FooterContent = styled.div`
@@ -155,7 +158,7 @@ const FooterContent = styled.div`
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;
-	margin: 0 0 0 2.7rem;
+	margin: 0 auto;
 `;
 
 const FooterAside = styled.aside`
