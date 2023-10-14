@@ -31,7 +31,7 @@ const H2 = styled.h2`
     line-height: ${({ theme }) => theme.lineHeights.H2};
     font-weight: 600;
 	text-align: left;
-    margin: 4rem 0 2.75rem 0;
+    margin-bottom: 3rem;
     padding: 0;
 
 	&::before {
@@ -55,7 +55,7 @@ const H3 = styled.h3`
     line-height: ${({ theme }) => theme.lineHeights.H3};
     font-weight: 600;
 	text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 0;
 
 	&::before {
@@ -78,11 +78,11 @@ const Blockquote = styled.blockquote`
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-weight: 400;
 	text-align: left;
-    line-height: 1.58rem;
+    line-height: 1.618rem;
     word-wrap: break-word;
     padding: 0;
 	margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: 4rem;
     margin-inline-start: 0;
     margin-inline-end: 0;
 	border-left: 2px solid ${({ theme }) => theme.colors.main};
