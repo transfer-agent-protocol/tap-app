@@ -23,6 +23,11 @@ export default function Navbar() {
 						<Image src="/icons/docs.svg" alt="Documentation" width={32} height={32} />
 					</Link>
 				</StyledA>
+				<StyledA>
+					<Link href="https://youtube.com/@poetnetworkhq" target="_blank">
+						<Image src="/icons/youtube.svg" alt="YouTube Videos" width={32} height={32} />
+					</Link>
+				</StyledA>
 			</span>
 		</Nav>
 	);
