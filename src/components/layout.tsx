@@ -12,7 +12,7 @@ export default function Layout({ children }: Props) {
 			<Main>{children}</Main>
 			<FooterWrapper>
 				<FooterContent>
-					© {new Date().getFullYear()} builders
+					© {new Date().getFullYear()} Transfer Agent Protocol Authors
 				</FooterContent>
 			</FooterWrapper>
 		</FullWidth>
