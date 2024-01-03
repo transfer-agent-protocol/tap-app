@@ -1,10 +1,9 @@
 {
-    "name": "app-scaffold",
+    "name": "tap-app",
     "version": "4.0.0",
     "private": true,
-    "author": "Alex Palmer <alex@poet.network>",
     "license": "UNLICENSED",
-    "description": "Poet's frontend scaffold for web apps",
+    "description": "TAP's frontend",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
