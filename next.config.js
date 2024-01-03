@@ -8,9 +8,6 @@ const nextConfig = {
     compiler: {
         styledComponents: true,
     },
-    serverRuntimeConfig: {
-        SLACK_WEBHOOK_URL: process.env.SLACK_WEBHOOK_URL,
-    },
 };
 
 module.exports = nextConfig;
