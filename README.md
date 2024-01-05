@@ -1,6 +1,6 @@
 # Transfer Agent Protocol frontend and landing page
 
-Public-facing site for the [Transfer Agent Protocol](https://github.com/poet-network/tap-cap-table).
+Public-facing site for the [Transfer Agent Protocol](https://github.com/transfer-agent-protocol/tap-cap-table).
 
 ## Official links
 

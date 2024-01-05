@@ -1,10 +1,12 @@
 import type { AppProps } from 'next/app';
 import type { NextPage } from 'next';
 import Head from "next/head";
+import { useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import theme from "../components/theme";
 import GlobalStyle from "../components/globalstyle";
 import { IBM_Plex_Mono } from 'next/font/google';
+import TagManager from "react-gtm-module";
 
 import Layout from "../components/layout";
 
@@ -59,6 +61,13 @@ export default function App({ Component, pageProps }: AppProps & { Component: Ne
 					<meta name="theme-color" content="#fcfaf6" />
 					<meta name="msapplication-TileColor" content="#0c0b0c" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+					<>
+						{useEffect(() => {
+							// Google Tag Manager for the Transfer Agent Protocol property and Clearbit
+							TagManager.initialize({ gtmId: "GTM-T976LRGP" });
+						}, [])}
+					</>
 
 				</Head>
 				<Component {...pageProps} />
