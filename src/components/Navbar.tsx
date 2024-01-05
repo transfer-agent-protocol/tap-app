@@ -19,7 +19,7 @@ export default function Navbar() {
 					</Link>
 				</StyledA>
 				<StyledA>
-					<Link href="https://coda.io/d/_dFoHg0h07Et/Transfer-Agent-Protocol_sua17" target="_blank">
+					<Link href="https://coda.io/d/_drhpwRhDok-/Transfer-Agent-Protocol_sua17" target="_blank">
 						<Image src="/icons/docs.svg" alt="Documentation" width={32} height={32} />
 					</Link>
 				</StyledA>
