@@ -8,24 +8,19 @@ export default function Navbar() {
 		<Nav>
 			<LogoRouter>
 				<Link href="/">
-					<Image src="/tap-glyph.svg" alt="Transfer Agent Protocol" width={48} height={48} />
+					<Image src="/tap-logo.svg" alt="Transfer Agent Protocol" width={48} height={48} />
 				</Link>
-				<Logotype>Transfer Agent Protocol_</Logotype>
+				<Logotype>Transfer Agent Protocol</Logotype>
 			</LogoRouter>
 			<span>
 				<StyledA>
-					<Link href="https://github.com/transfer-agent-protocol/tap-cap-table" target="_blank ">
-						<Image src="/icons/github.svg" alt="TAP Cap Table Github" width={32} height={32} />
-					</Link>
-				</StyledA>
-				<StyledA>
-					<Link href="https://coda.io/d/_drhpwRhDok-/Transfer-Agent-Protocol_sua17" target="_blank">
+					<Link href="https://docs.transferagentprotocol.xyz" target="_blank">
 						<Image src="/icons/docs.svg" alt="Documentation" width={32} height={32} />
 					</Link>
 				</StyledA>
 				<StyledA>
-					<Link href="https://youtube.com/@transfer-agent-protocol" target="_blank">
-						<Image src="/icons/youtube.svg" alt="YouTube Videos" width={32} height={32} />
+					<Link href="https://github.com/transfer-agent-protocol/tap-cap-table" target="_blank ">
+						<Image src="/icons/github.svg" alt="TAP Cap Table Github" width={32} height={32} />
 					</Link>
 				</StyledA>
 			</span>
