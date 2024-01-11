@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps & { Component: Ne
 
 					<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c0b0c" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-					<meta name="theme-color" content="#fcfaf6" />
+					<meta name="theme-color" content="#fafafc" />
 					<meta name="msapplication-TileColor" content="#0c0b0c" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
