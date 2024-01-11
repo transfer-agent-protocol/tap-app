@@ -2,7 +2,7 @@
     "name": "Transfer Agent Protocol",
     "short_name": "TAP",
     "theme_color": "#0C0B0C",
-    "background_color": "#FCFAF6",
+    "background_color": "#FAFAFC",
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
