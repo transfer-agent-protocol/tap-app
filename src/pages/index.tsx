@@ -33,7 +33,7 @@ export default function Home() {
 			<Credits>
 				<a href="https://goerli-optimism.etherscan.io/address/0x7182cc6f1d512906c794742e6a2295e1d8448e82" target="_blank" rel="noopener noreferrer">OP Goerli</a>
 				<span> | </span>
-				<a href="https://explorerl2new-plume-orbit-wxh1kfbvb6.t.conduit.xyz/address/0x7182cc6f1d512906C794742e6a2295E1d8448e82" target="_blank" rel="noopener noreferrer">Plume Testnet</a>
+				<a href="https://www.plumenetwork.xyz/" target="_blank" rel="noopener">Plume Testnet</a>
 			</Credits>
 		</Content>
 	);
