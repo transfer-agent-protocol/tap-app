@@ -1,40 +1,55 @@
-import { Heading, Content, Credits } from "../components/wrappers";
-import { H1, H2, Blockquote, P } from "../components/typography";
+import { Heading, Content, StyledTable } from "../components/wrappers";
+import { H1, H2, P } from "../components/typography";
 
 export default function Home() {
 	return (
 		<Content>
 			<Heading>
-				<H1>Onchain equity protocol.</H1>
-				<P>Transfer Agent Infrastructure for tokenizing real-world assets on the blockchain.</P>
-				<P>Permissionless. Open source. Compliant with transfer agent regulation in the US.</P>
+				<H1>Onchain cap tables.</H1>
+				<P>Tokenize RWAs, and handle post-trade settlement.</P>
+				<P>Based on the <a href="https://www.opencaptablecoalition.com/" target="_blank">Open Cap Table</a> format, transfer agent protocol is being used by SEC-registered entities.</P>
+				<a href="https://paragraph.xyz/@thatalexpalmer/rwa-tokenization-protocol-stack" target="_blank" rel="noopener">Read why this exists</a>
 			</Heading>
-			<Blockquote>
-				<P>Introducing an <mark>open source onchain equity protocol</mark> to build web3 equivalents of traditional transfer agents.</P>
-				<P>This infra lets you mint performant <mark>equity cap tables</mark> onchain and handle post-trade settlement of tokenized RWAs.</P>
-				<P>It is based on and is fully compatible with the <a href="https://www.opencaptablecoalition.com/" target="_blank">Open Cap Table</a> format.</P>
-				<a href="https://paragraph.xyz/@thatalexpalmer/rwa-tokenization-protocol-stack" target="_blank" rel="noopener">Read the full announcement</a>
-			</Blockquote>
 			<H2>
-				Built by
+				Deployments:
 			</H2>
-			<Credits>
-				<a href="https://warpcast.com/thatalexpalmer.eth" target="_blank" rel="noopener">thatalexpalmer.eth</a>
-				<span>|</span>
-				<a href="https://warpcast.com/vic" target="_blank" rel="noopener">vic</a>
-				<span>|</span>
-				<a href="https://pluralenergy.co" target="_blank" rel="noopener">Plural Energy</a>
-				<span>|</span>
-				<a href="https://fairmint.co" target="_blank" rel="noopener">Fairmint</a>
-			</Credits>
-			<H2>
-				Testnet deployments
-			</H2>
-			<Credits>
-				<a href="https://goerli-optimism.etherscan.io/address/0x7182cc6f1d512906c794742e6a2295e1d8448e82" target="_blank" rel="noopener noreferrer">OP Goerli</a>
-				<span> | </span>
-				<a href="https://www.plumenetwork.xyz/" target="_blank" rel="noopener">Plume Testnet</a>
-			</Credits>
+			<P>
+				One of the main implementations of this infra is currently being developed on <a href="https://plumenetwork.xyz" target="_blank">Plume</a> by <a href="https://warpcast.com/thatalexpalmer.eth" target="_blank">thatalexpalmer.eth</a>
+			</P>
+			<StyledTable>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>TAP Admin</td>
+						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0x366aA809015061C101983900d0c2ebf7d71B96AF">0x366aA809015061C101983900d0c2ebf7d71B96AF</a></td>
+					</tr>
+					<tr>
+						<td>CapTableFactory</td>
+						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0xB753930229Bf1Fe02189b4FEb20678Ba44312877" target="_blank" rel="noopener noreferrer">0xB753930229Bf1Fe02189b4FEb20678Ba44312877</a></td>
+					</tr>
+					<tr>
+						<td>CapTable</td>
+						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0xE7f4bfa5eE90a8450Cf4f9410463C8D24102ce8A" target="_blank" rel="noopener noreferrer">0xE7f4bfa5eE90a8450Cf4f9410463C8D24102ce8A</a></td>
+					</tr>
+					<tr>
+						<td>StockLib</td>
+						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0x0d2cfD82004aeD30A4Bd4Efe7b8810Bd86a53296" target="_blank" rel="noopener noreferrer">0x0d2cfD82004aeD30A4Bd4Efe7b8810Bd86a53296</a></td>
+					</tr>
+					<tr>
+						<td>Adjustment</td>
+						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0x1E228a15a25F0bDe12132620A6aa152Baf12d36f" target="_blank" rel="noopener noreferrer">0x1E228a15a25F0bDe12132620A6aa152Baf12d36f</a></td>
+					</tr>
+					<tr>
+						<td>DeleteContext</td>
+						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0xb960D1D1c9C39C1EA7CB452Bfd45B2799edAF33E" target="_blank" rel="noopener noreferrer">0xb960D1D1c9C39C1EA7CB452Bfd45B2799edAF33E</a></td>
+					</tr>
+				</tbody>
+			</StyledTable>
 		</Content>
 	);
 }

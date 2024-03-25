@@ -14,7 +14,7 @@ const Nav = styled.nav`
     justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	max-width: 768px;
+	max-width: 100%;
 	padding: 1rem 0;
 `;
 
@@ -71,6 +71,21 @@ const Heading = styled.div`
     @media only screen and (max-width: 512px) {
         margin: 2rem 0;
     }
+
+	a {
+		font-size: ${({ theme }) => theme.fontSizes.medium};
+        padding: 0 1rem 0 0;
+        /** iPhone portrait mode and equivalent devices */
+		@media only screen and (max-width: 512px) {
+			font-size: ${({ theme }) => theme.fontSizes.medium};
+			padding: 0 0.3rem 0 0;
+		}
+    }
+
+	a:hover {
+		color: ${({ theme }) => theme.colors.background};
+		background: ${({ theme }) => theme.colors.main};
+	}
 `;
 
 const Content = styled.div`
@@ -115,32 +130,48 @@ const Credits = styled.div`
 	align-items: flex-start;
 	font-size: ${({ theme }) => theme.fontSizes.large};
 	margin-bottom: 4rem;
-
-	a, span {
-        padding: 0 1rem 0 0;
-        /** iPhone portrait mode and equivalent devices */
-		@media only screen and (max-width: 512px) {
-			font-size: ${({ theme }) => theme.fontSizes.baseline};
-			padding: 0 0.3rem 0 0;
-		}
-    }
-
-	a:hover {
-		color: ${({ theme }) => theme.colors.background} !important;
-		background: ${({ theme }) => theme.colors.main} !important;
-	}
-`; 
-
-const TallyWrapper = styled.div`
-	position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	padding: 2px;
-    width: 100%;
-    height: 100%;
 `;
+
+const StyledTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: ${({ theme }) => theme.fontSizes.baseline};
+  table-layout: fixed; /* Helps to apply word wrapping */
+
+  th, td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.main};
+    word-break: break-word; /* Ensures text wraps inside the cell */
+  }
+
+  th {
+    background-color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.background};
+  }
+
+  td a {
+    color: ${({ theme }) => theme.colors.main};
+    text-decoration: none;
+    display: inline-block; /* Can help with better handling of wrapping for links */
+    max-width: 100%; /* Prevents the link from overflowing its container */
+  }
+
+  td a:hover {
+    color: ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.main};
+  }
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+    th, td {
+      padding: 0.3rem; /* Smaller padding for smaller screens */
+    }
+  }
+`;
+
+
 
 const FooterWrapper = styled.footer`
     display: flex;
@@ -184,4 +215,4 @@ const FooterAside = styled.aside`
     }
 `;
 
-export { FullWidth, Nav, Logotype, Main, Heading, Content, Article, Credits, TallyWrapper, FooterWrapper, FooterContent, FooterAside };
+export { FullWidth, Nav, Logotype, Main, Heading, Content, Article, Credits, StyledTable, FooterWrapper, FooterContent, FooterAside };
