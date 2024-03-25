@@ -25,7 +25,7 @@ export default function Home() {
 				</thead>
 				<tbody>
 					<tr>
-						<td>Deployer Account</td>
+						<td>TAP Admin</td>
 						<td><a href="https://plume-testnet.explorer.caldera.xyz/address/0x366aA809015061C101983900d0c2ebf7d71B96AF">0x366aA809015061C101983900d0c2ebf7d71B96AF</a></td>
 					</tr>
 					<tr>
