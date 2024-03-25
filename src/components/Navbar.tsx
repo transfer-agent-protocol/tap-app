@@ -10,17 +10,15 @@ export default function Navbar() {
 				<Link href="/">
 					<Image src="/tap-logo.svg" alt="Transfer Agent Protocol" width={48} height={48} />
 				</Link>
-				<Logotype>Transfer Agent Protocol</Logotype>
 			</LogoRouter>
 			<span>
 				<StyledA>
-					<Link href="https://docs.transferagentprotocol.xyz" target="_blank">
-						<Image src="/icons/docs.svg" alt="Documentation" width={32} height={32} />
+					<Link href="https://docs.transferagentprotocol.xyz" target="_blank">Docs
 					</Link>
 				</StyledA>
 				<StyledA>
 					<Link href="https://github.com/transfer-agent-protocol/tap-cap-table" target="_blank ">
-						<Image src="/icons/github.svg" alt="TAP Cap Table Github" width={32} height={32} />
+						Github
 					</Link>
 				</StyledA>
 			</span>
