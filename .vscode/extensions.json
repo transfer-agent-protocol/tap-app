@@ -3,11 +3,9 @@
     "recommendations": [
         "dbaeumer.vscode-eslint",
         "mikestead.dotenv",
-		"eamodio.gitlens",
-        "christian-kohler.npm-intellisense",
+		"christian-kohler.npm-intellisense",
         "esbenp.prettier-vscode",
-        "prisma.prisma",
-        "styled-components.vscode-styled-components",
+		"styled-components.vscode-styled-components",
         "redhat.vscode-yaml",
         "formulahendry.auto-close-tag",
         "formulahendry.auto-rename-tag",
