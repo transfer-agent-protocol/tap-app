@@ -8,7 +8,7 @@ export default function Home() {
 				<H1>Onchain cap tables.</H1>
 				<P>Tokenize RWAs, and handle post-trade settlement.</P>
 				<P>Based on the <a href="https://www.opencaptablecoalition.com/" target="_blank">Open Cap Table</a> format, transfer agent protocol is being used by SEC-registered entities.</P>
-				<a href="https://paragraph.xyz/@thatalexpalmer/rwa-tokenization-protocol-stack" target="_blank" rel="noopener">Read why this exists</a>
+				<a href="https://paragraph.com/@thatalexpalmer/rwa-tokenization-protocol-stack-1" target="_blank" rel="noopener">Read why this exists</a>
 			</Heading>
 			<H2>
 				Deployments:
