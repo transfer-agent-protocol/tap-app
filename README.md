@@ -1,10 +1,6 @@
 # Transfer Agent Protocol frontend and landing page
 
-Public-facing site for the [Transfer Agent Protocol](https://github.com/transfer-agent-protocol/tap-cap-table).
-
-## Official links
-
-- [Contributor doc](https://coda.io/d/_drhpwRhDok-/Transfer-Agent-Protocol_sua17) - to read about the project and how to contribute.
+Public-facing site for the [Transfer Agent Protocol](https://github.com/transfer-agent-protocol/tap-cap-table)
 
 ## Contributing
 
