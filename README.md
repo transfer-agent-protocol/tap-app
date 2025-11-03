@@ -5,7 +5,6 @@ Public-facing site for the [Transfer Agent Protocol](https://github.com/transfer
 ## Official links
 
 - [Contributor doc](https://coda.io/d/_drhpwRhDok-/Transfer-Agent-Protocol_sua17) - to read about the project and how to contribute.
-- [Slack](https://transferagentprotocol.slack.com/) - invite only for now.
 
 ## Contributing
 
