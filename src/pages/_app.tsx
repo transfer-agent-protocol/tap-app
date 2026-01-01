@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps & { Component: Ne
 					<meta name="author" content="Transfer Agent Protocol" />
 					<meta
 						name="description"
-						content="Mint equity cap tables onchain. MIT-licensed, open-source protocol stack to build web3 equivalents of traditional transfer agents. Regulatory compliant tokenized capital markets infrastructure."
+						content="Mint equity cap tables onchain. Open-source and regulatory compliant infrastructured for tokenized capital markets and transfer agents."
 					/>
 
 					<title>Transfer Agent Protocol</title>
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps & { Component: Ne
 					<meta property="og:title" content="Transfer Agent Protocol" />
 					<meta
 						property="og:description"
-						content="Mint equity cap tables onchain. MIT-licensed, open-source protocol stack to build web3 equivalents of traditional transfer agents. Regulatory compliant tokenized capital markets infrastructure."
+						content="Mint equity cap tables onchain. Open-source and regulatory compliant infrastructured for tokenized capital markets and transfer agents."
 					/>
 					<link rel="canonical" href="https://transferagentprotocol.xyz" />
 
@@ -61,13 +61,6 @@ export default function App({ Component, pageProps }: AppProps & { Component: Ne
 					<meta name="theme-color" content="#fafafc" />
 					<meta name="msapplication-TileColor" content="#0c0b0c" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-
-					<>
-						{useEffect(() => {
-							// Google Tag Manager for the Transfer Agent Protocol property and Clearbit
-							TagManager.initialize({ gtmId: "GTM-T976LRGP" });
-						}, [])}
-					</>
 
 				</Head>
 				<Component {...pageProps} />
